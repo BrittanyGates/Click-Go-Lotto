@@ -1,36 +1,38 @@
-/* GLOBAL STYLES
--------------------------------------------------- */
+/* GLOBAL STYLES */
 body {
   background-color: black;
   color: antiquewhite;
 }
 
-/* TITLE CONTAINER
--------------------------------------------------- */
+/* TITLE CONTAINER */
 .title-container {
   padding: 50px;
   text-align: center;
 }
 
 .title {
-  font-size: 4rem;
+  font-family: 'Bangers', cursive;
+  font-size: 6rem;
 }
 
-/* GAME CONTAINER
--------------------------------------------------- */
-.game-container {
+/* GAME CONTAINER */
+.games-container {
   text-align: center;
 }
 
 .game-title {
+  font-family: 'Roboto', sans-serif;
   font-size: 2rem;
 }
 
-/* Featurettes
-------------------------- */
+/* GAMES */
 
-/* GAMES
-------------------------- */
+/* ABOUT CONTAINER */
+.about-container {
+  text-align: center;
+}
 
-/* RESPONSIVE CSS
--------------------------------------------------- */
+.my-info {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+}

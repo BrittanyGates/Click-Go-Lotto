@@ -1,61 +1,45 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="This page randomly generates lottery numbers for Fantasy 5.">
-  <title>Fantasy 5 | Lotto Number Generator</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="/static/css/index.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Generate lottery numbers for Fantasy 5" />
+  <title>Fantasy 5 | Click-Go-Lotto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="/static/css/index.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-  <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/static/favicon/site.webmanifest">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <!-- <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="/static/favicon/site.webmanifest" /> -->
 </head>
 <body>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/">Lotto Number Generator</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Games
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="/games/cash_three.html">Cash 3</a></li>
-              <li><a class="dropdown-item" href="/games/cash_four.html">Cash 4</a></li>
-              <li><a class="dropdown-item" href="/games/fantasy_five.html">Fantasy 5</a></li>
-              <li><a class="dropdown-item" href="/games/mega_millions.html">Mega Millions</a></li>
-              <li><a class="dropdown-item" href="/games/powerball.html">Powerball</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+
   <div class="container games-container">
-    <img class="game-img" src="/static/img/fantasy_five.jpg" alt="Fantasy 5">
+    <!-- <img class="game-img" src="/static/img/fantasy_five.jpg" alt="Fantasy 5"> -->
     <h1 class="generated-num-header">Your Fantasy 5 Numbers: <span class="generated-num">{{ num1 }} - {{ num2 }} - {{ num3 }} - {{ num4}} - {{ num5 }}</span></h1>
     <form action="fantasy_five.html" method="post">
       <button class="btn btn-lg btn-primary" name="regenerate" type="submit" onclick="{{ num1 }} {{ num2 }} {{ num3 }} {{ num4}} {{ num5 }}">Generate Again</button>
     </form>
-    <hr class="featurette-divider">
   </div>
-  <footer class="container">
-    <p class="float-end"><a href="#">Back to top</a></p>
-    <p>Created by Brittany Gates: <a href="https://www.brittanygates.me" title="My Blog" target="_blank">My Website</a> | <a href="https://github.com/brittbot-bgates" title="My Github account" target="_blank"><i class="bi bi-github"></i></a></p>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+  <div class="col about-container">
+    <p class="my-info">Created by <a href="https://bcgates.com" title="My Website" target="_blank">Brittany Gates</a> |
+      <a href="mailto:support@bcgates.com">support@bcgates.com</a> |
+      <a href="https://github.com/brittbot-bgates" title="My Github Profile" target="_blank"><i
+          class="bi bi-github"></i></a> | <a href="https://twitter.com/brittany__gates" title="My Twitter Profile"
+        target="_blank"><i class="bi bi-twitter"></i></a>
+    </p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
 </body>
 </html>
