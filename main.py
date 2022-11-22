@@ -3,8 +3,9 @@
 Title: Lotto Number Generator
 Creator: Brittany Gates (https://github.com/brittbot-bgates)
 About: This web app randomly generates lottery numbers for the following games:
-- Cash 3
-- Cash 4
+- Cash 3 / Pick 3
+- Cash 4 / Pick 4
+- Pick 5
 - Fantasy 5
 - Mega Millions
 - Powerball
@@ -28,31 +29,40 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/games/cash_three.html", methods=["GET", "POST"])
+@app.route("/games/pick3.html", methods=["GET", "POST"])
 def cash_three_game():
     """
     :return: This function returns the three random numbers to be displayed on the Cash 3/Pick 3 page.
     """
     num1, num2, num3 = cash_three()
-    return render_template("/games/cash_three.html", num1=num1, num2=num2, num3=num3)
+    return render_template("/games/pick3.html", num1=num1, num2=num2, num3=num3)
 
 
-@app.route("/games/cash_four.html", methods=["GET", "POST"])
+@app.route("/games/pick4.html", methods=["GET", "POST"])
 def cash_four_game():
     """
     :return: This function returns the four random numbers to be displayed on the Cash 4/Pick 4 page.
     """
     num1, num2, num3, num4 = cash_four()
-    return render_template("/games/cash_four.html", num1=num1, num2=num2, num3=num3, num4=num4)
+    return render_template("/games/pick4.html", num1=num1, num2=num2, num3=num3, num4=num4)
 
 
-@app.route("/games/fantasy_five.html", methods=["GET", "POST"])
+@app.route("/games/pick5.html", methods=["GET", "POST"])
+def pick5_game():
+    """
+    :return: This function returns the four random numbers to be displayed on the Cash 4/Pick 4 page.
+    """
+    # num1, num2, num3, num4 = cash_four()
+    return render_template("/games/pick5.html", num1=num1, num2=num2, num3=num3, num4=num4)
+
+
+@app.route("/games/fantasy5.html", methods=["GET", "POST"])
 def fantasy_five_game():
     """
     :return: This function returns the five random numbers to be displayed on the Fantasy 5 page.
     """
     num1, num2, num3, num4, num5 = fantasy_five()
-    return render_template("/games/fantasy_five.html", num1=num1, num2=num2, num3=num3, num4=num4, num5=num5)
+    return render_template("/games/fantasy5.html", num1=num1, num2=num2, num3=num3, num4=num4, num5=num5)
 
 
 @app.route("/games/mega_millions.html", methods=["GET", "POST"])

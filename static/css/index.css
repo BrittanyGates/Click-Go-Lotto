@@ -1,7 +1,7 @@
 /* GLOBAL STYLES */
 body {
   background-color: black;
-  color: antiquewhite;
+  color: white;
 }
 
 /* TITLE CONTAINER */
@@ -11,7 +11,7 @@ body {
 }
 
 .title {
-  font-family: 'Bangers', cursive;
+  font-family: 'Montserrat', sans-serif;
   font-size: 6rem;
 }
 
@@ -20,15 +20,13 @@ body {
   text-align: center;
 }
 
-.game-title {
-  font-family: 'Roboto', sans-serif;
-  font-size: 2rem;
-}
-
 /* GAMES */
 
 /* ABOUT CONTAINER */
 .about-container {
+  position: fixed;
+  left: 40%;
+  bottom: 0;
   text-align: center;
 }
 

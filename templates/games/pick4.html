@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="/static/css/index.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <!-- <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png" />
@@ -25,8 +25,7 @@
 
   <div class="container games-container">
     <!-- <img class="game-img" src="/static/img/cash_four.jpg" alt="Cash 4 / Pick 4"> -->
-    <h1 class="generated-num-header">Your Cash 4 / Pick 4 Numbers: <span class="generated-num">{{ num1 }} - {{ num2 }} -
-        {{ num3 }} - {{ num4 }}</span></h1>
+    <h1 class="generated-num-header">Your Cash 4 / Pick 4 Numbers: {{ num1 }} - {{ num2 }} - {{ num3 }} - {{ num4 }}</h1>
     <form action="cash_four.html" method="post">
       <button class="btn btn-lg btn-primary" name="regenerate" type="submit"
         onclick="{{ num1 }} {{ num2 }} {{ num3 }} {{ num4 }}">Generate Again</button>
