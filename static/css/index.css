@@ -6,21 +6,36 @@ body {
 
 /* TITLE CONTAINER */
 .title-container {
-  padding: 50px;
-  text-align: center;
+  padding: 50px 0;
 }
 
 .title {
   font-family: 'Montserrat', sans-serif;
   font-size: 6rem;
-}
-
-/* GAME CONTAINER */
-.games-container {
   text-align: center;
 }
 
+/* GAME CONTAINER */
+.games-container-top, .games-container-bottom {
+  text-align: center;
+}
+
+.games-container-bottom {
+  margin-top: 24px;
+}
+
+.card {
+  width: 18rem;
+}
+
+.card-title {
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  font-size: 1.5rem;
+}
+
 /* GAMES */
+
 
 /* ABOUT CONTAINER */
 .about-container {
