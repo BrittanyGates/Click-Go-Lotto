@@ -1,37 +1,52 @@
 /* GLOBAL STYLES */
 body {
+  background-image: url("/static/img/background.jpg");
+  background-position: top;
   background-color: black;
   color: white;
+}
+
+.navbar {
+  background-color: #484041;  
+}
+
+.navbar-brand {
+  color: white;
+}
+
+.nav-item a {
+  color: #FFF4E9;
+}
+
+.navbar-brand:hover, .nav-item a:hover {
+  color: #E8DBC5;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.active {
+  color: #B185A7;
 }
 
 /* TITLE CONTAINER */
 .title-container {
   padding: 50px 0;
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
 .title {
   font-family: 'Montserrat', sans-serif;
-  font-size: 6rem;
+  font-size: 5rem;
   text-align: center;
 }
 
 /* GAME CONTAINER */
 .games-container-top, .games-container-bottom {
+  margin-top: 24px;
   text-align: center;
 }
 
-.games-container-bottom {
-  margin-top: 24px;
-}
-
-.card {
-  width: 18rem;
-}
-
-.card-title {
-  font-family: 'Montserrat', sans-serif;
-  color: black;
-  font-size: 1.5rem;
+.game-img {
+  width: 100%;
+  border-radius: 1.5rem;
 }
 
 /* GAMES */
@@ -39,13 +54,14 @@ body {
 
 /* ABOUT CONTAINER */
 .about-container {
+  width: 50%;
   position: fixed;
-  left: 40%;
   bottom: 0;
-  text-align: center;
+  left: 25%;
 }
 
 .my-info {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
+  text-align: center;
 }
