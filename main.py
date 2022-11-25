@@ -52,10 +52,10 @@ def cash4_pick4_game():
 @app.route("/games/pick5.html", methods=["GET", "POST"])
 def pick5_game():
     """
-    :return: This function returns the four random numbers to be displayed on the Cash 4/Pick 4 page.
+    :return: This function returns the five random numbers to be displayed on the Pick 5 page.
     """
     num1, num2, num3, num4, num5 = pick5()
-    return render_template("/games/pick5.html", num1=num1, num2=num2, num3=num3, num4=num4)
+    return render_template("/games/pick5.html", num1=num1, num2=num2, num3=num3, num4=num4, num5=num5)
 
 
 @app.route("/games/fantasy-five.html", methods=["GET", "POST"])

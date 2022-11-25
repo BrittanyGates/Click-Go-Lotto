@@ -52,21 +52,31 @@
     </div>
   </nav>
 
-  <div class="container games-container">
-    <!-- <img class="game-img" src="/static/img/mega_millions.jpg" alt="Mega Millions"> -->
-    <h1 class="generated-num-header">Your Mega Millions Numbers: {{ num1 }} - {{ num2 }} - {{ num3 }} - {{ num4}} - {{ num5 }}&nbsp;&nbsp;MB: {{ mega}}</h1>
-    <form action="mega_millions.html" method="post">
-      <button class="btn btn-lg btn-primary" name="regenerate" type="submit" onclick="{{ num1 }} {{ num2 }} {{ num3 }} {{ num4}} {{ num5 }} {{ mega}}">Generate Again</button>
-    </form>
-  </div>
+  <div class="d-flex align-items-center justify-content-center game-container">
+    <div class="col">
+      <img class="individual-game-img" src="/static/img/mega_millions.jpg" alt="Mega Millions Logo">
+    </div>
+    <div class="col">
+      <h1 class="lotto-num">{{ num1 }} - {{ num2 }} - {{ num3 }} - {{ num4}} - {{ num5 }} | MB {{ mega}}</h1>
+      <form action="mega-millions.html" method="post">
+        <button class="btn btn-lg" name="regenerate" type="submit" onclick="{{ num1 }} {{ num2 }} {{ num3 }} {{ num4 }} {{ num5 }} {{ mega}}">Click-Go
+          Again</button>
+      </form>
+    </div>    
+  </div>  
 
-<div class="col about-container">
-    <p class="my-info">Created by <a href="https://bcgates.com" title="My Website" target="_blank">Brittany Gates</a> |
-      <a href="mailto:support@bcgates.com">support@bcgates.com</a> |
-      <a href="https://github.com/brittbot-bgates" title="My Github Profile" target="_blank"><i
-          class="bi bi-github"></i></a> | <a href="https://twitter.com/brittany__gates" title="My Twitter Profile"
-        target="_blank"><i class="bi bi-twitter"></i></a>
-    </p>
+  <div class="container about-container">
+    <div class="row">
+      <div class="col">
+        <p class="my-info">Created by <a href="https://bcgates.com" title="My Website" target="_blank">Brittany
+            Gates</a> |
+          <a href="mailto:support@bcgates.com">support@bcgates.com</a> |
+          <a href="https://github.com/brittbot-bgates" title="My Github Profile" target="_blank"><i
+              class="bi bi-github"></i></a> | <a href="https://twitter.com/brittany__gates" title="My Twitter Profile"
+            target="_blank"><i class="bi bi-twitter"></i></a>
+        </p>
+      </div>
+    </div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
