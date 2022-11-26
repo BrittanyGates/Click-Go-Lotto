@@ -25,13 +25,17 @@
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <a class="navbar-brand" href="/">Click-Go-Lotto</a>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#defaultNavbar"
+        aria-controls="defaultNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="defaultNavbar">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/">Home</a>
+            <a class="nav-link" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="cash3-pick3.html">Cash 3 / Pick 3</a>
+            <a class="nav-link active" aria-current="page" href="cash3-pick3.html">Cash 3 / Pick 3</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="cash4-pick4.html">Cash 4 / Pick 4</a>
@@ -48,16 +52,16 @@
           <li class="nav-item">
             <a class="nav-link" href="powerball.html">Powerball</a>
           </li>
-        </ul>
+        </ul>        
       </div>
     </div>
   </nav>
-
+  
   <div class="d-flex align-items-center justify-content-center game-container">
     <div class="col">
       <img class="individual-game-img" src="/static/img/pick3.jpg" alt="Pick 3 Logo">
     </div>
-    <div class="col">
+    <div class="col lotto-num-col">
       <h1 class="lotto-num">{{ num1 }} - {{ num2 }} - {{ num3 }}</h1>
       <form action="cash3-pick3.html" method="post">
         <button class="btn btn-lg" name="regenerate" type="submit" onclick="{{ num1 }} {{ num2 }} {{ num3 }}">Click-Go
