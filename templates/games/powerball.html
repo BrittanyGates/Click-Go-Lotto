@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -24,10 +25,14 @@
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <a class="navbar-brand" href="/">Click-Go-Lotto</a>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#defaultNavbar"
+        aria-controls="defaultNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="defaultNavbar">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/">Home</a>
+            <a class="nav-link" href="/">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="cash3-pick3.html">Cash 3 / Pick 3</a>
@@ -45,25 +50,28 @@
             <a class="nav-link" href="pick5.html">Pick 5</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="powerball.html">Powerball</a>
+            <a class="nav-link active" aria-current="page" href="powerball.html">Powerball</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div class="d-flex align-items-center justify-content-center game-container">
-    <div class="col">
-      <img class="individual-game-img" src="/static/img/powerball.jpg" alt="Powerball Logo">
+  <div class="container game-container">
+    <div class="row">
+      <div class="col-sm">
+        <img class="individual-game-img" src="/static/img/powerball.jpg" alt="Powerball Logo">
+      </div>
+      <div class="col-sm lotto-num-col">
+        <h1 class="lotto-num">{{ num1 }} - {{ num2 }} - {{ num3 }} - {{ num4}} - {{ num5 }} | PB {{ power_ball }}</h1>
+        <form action="powerball.html" method="post">
+          <button class="btn btn-lg" name="regenerate" type="submit"
+            onclick="{{ num1 }} {{ num2 }} {{ num3 }} {{ num4 }} {{ num5 }} {{ power_ball }}">Click-Go
+            Again</button>
+        </form>
+      </div>
     </div>
-    <div class="col">
-      <h1 class="lotto-num">{{ num1 }} - {{ num2 }} - {{ num3 }} - {{ num4}} - {{ num5 }} | PB {{ power_ball }}</h1>
-      <form action="powerball.html" method="post">
-        <button class="btn btn-lg" name="regenerate" type="submit" onclick="{{ num1 }} {{ num2 }} {{ num3 }} {{ num4 }} {{ num5 }} {{ power_ball }}">Click-Go
-          Again</button>
-      </form>
-    </div>    
-  </div>  
+  </div>
 
   <div class="container about-container">
     <div class="row">
@@ -83,4 +91,5 @@
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
 </body>
+
 </html>

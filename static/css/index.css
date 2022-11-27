@@ -29,7 +29,7 @@ body {
 /* TITLE CONTAINER */
 .title-container {
   padding: 50px 0;
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(0, 0, 0, 0.30);
   width: 50%;
 }
 
@@ -52,7 +52,7 @@ body {
 
 /* GAMES */
 .game-container {
-  height: 800px;
+  margin-top: 275px;
   text-align: center;
 }
 
@@ -61,15 +61,28 @@ body {
   border-radius: 1.5rem;
 }
 
+.lotto-num-col {
+  padding-right: 20px;
+  margin-top: 75px;
+}
+
 .lotto-num {
   font-size: 4rem;
+  background-color: rgba(0, 0, 0, 0.35);
+  border: white 0.4rem solid;
+  border-radius: 1.5rem;
+  padding-bottom: 8px;
+}
+
+.btn {
+  margin-top: 20px;
 }
 
 .btn-lg {
   background-color: #484041;
   color: #FFF4E9;
+  border: white solid 0.15rem;
   border-radius: 1.5rem;
-  border-color: none;
 }
 
 .btn-lg:hover {
@@ -100,4 +113,167 @@ body {
 
 .my-info a:hover {
   color: #6D72C3;
+}
+
+/* MOBILE DEVICE STYLES */
+
+/* SMALL PHONES */
+@media only screen and (max-width: 600px) {
+  body {
+    background-position: top left;
+  }
+  
+  .title-container {
+    padding: 20px 0;
+    width: 90%;
+  }
+  
+  .title {
+    font-size: 2.75rem;
+  }
+
+  .games-container-top {
+    margin-top: 20px;
+  }
+
+  .game-img {
+    width: 60%;
+    margin-top: 20px;
+  }
+
+  .game-container {
+    margin-top: 200px;
+  }
+  
+  .individual-game-img {
+    width: 80%;
+  }
+  
+  .lotto-num-col {
+    margin-top: 20px;
+    padding-left: 20px;
+  }
+  
+  .lotto-num {
+    font-size: 2rem;
+    border: white 0.25rem solid;
+    padding: 5px 10px 2px 10px;
+  }
+
+  .btn {
+    margin-bottom: 190px;
+  }
+
+  .about-container {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding-top: 20px;
+  }
+  
+  .my-info {
+    font-size: 0.9rem;
+  }  
+}
+
+/* TABLETS */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    background-position: top left;
+  }
+  
+  .title-container {
+    padding: 20px 0;
+    width: 90%;
+  }
+  
+  .title {
+    font-size: 3.25rem;
+  }
+
+  .games-container-top {
+    margin-top: 20px;
+  }
+
+  .game-img {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .game-container {
+    margin-top: 275px;
+  }
+  
+  .individual-game-img {
+    width: 100%;
+  }
+  
+  .lotto-num-col {
+    margin-top: 20px;
+    padding-left: 20px;
+  }
+  
+  .lotto-num {
+    font-size: 2rem;
+    border: white 0.25rem solid;
+    padding: 5px 10px 2px 10px;
+  }
+
+  .about-container {
+    margin-top: 265px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding-top: 20px;
+  }
+  
+  .my-info {
+    font-size: 1rem;
+  }
+}
+
+/* LAPTOPS */
+@media only screen and (min-width: 1023px) and (max-width: 1439px) {
+  body {
+    background-position: top right;
+  }
+
+  .title-container {
+    padding: 20px 0;
+    width: 90%;
+  }
+  
+  .title {
+    font-size: 3.25rem;
+  }
+
+  .games-container-top {
+    margin-top: 20px;
+  }
+
+  .game-img {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .game-container {
+    margin-top: 275px;
+  }
+
+  .individual-game-img {
+    width: 100%;
+  }
+
+  .lotto-num-col {
+    margin-top: 50px;
+    padding-left: 20px;
+  }
+
+  .lotto-num {
+    font-size: 3rem;
+    border: white 0.25rem solid;
+    padding: 5px 10px 2px 10px;
+  }
 }
