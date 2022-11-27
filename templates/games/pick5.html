@@ -52,23 +52,26 @@
           <li class="nav-item">
             <a class="nav-link" href="powerball.html">Powerball</a>
           </li>
-        </ul>        
+        </ul>
       </div>
     </div>
   </nav>
 
-  <div class="d-flex align-items-center justify-content-center game-container">
-    <div class="col">
-      <img class="individual-game-img" src="/static/img/pick5.jpg" alt="Pick 5 Logo">
+  <div class="container game-container">
+    <div class="row">
+      <div class="col-sm">
+        <img class="individual-game-img" src="/static/img/pick5.jpg" alt="Pick 5 Logo">
+      </div>
+      <div class="col-sm lotto-num-col">
+        <h1 class="lotto-num">{{ num1 }} - {{ num2 }} - {{ num3 }} - {{ num4}} - {{ num5 }}</h1>
+        <form action="pick5.html" method="post">
+          <button class="btn btn-lg" name="regenerate" type="submit"
+            onclick="{{ num1 }} {{ num2 }} {{ num3 }} {{ num4 }} {{ num5 }}">Click-Go
+            Again</button>
+        </form>
+      </div>
     </div>
-    <div class="col lotto-num-col">
-      <h1 class="lotto-num">{{ num1 }} - {{ num2 }} - {{ num3 }} - {{ num4}} - {{ num5 }}</h1>
-      <form action="pick5.html" method="post">
-        <button class="btn btn-lg" name="regenerate" type="submit" onclick="{{ num1 }} {{ num2 }} {{ num3 }} {{ num4 }} {{ num5 }}">Click-Go
-          Again</button>
-      </form>
-    </div>    
-  </div>  
+  </div>
 
   <div class="container about-container">
     <div class="row">
