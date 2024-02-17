@@ -67,23 +67,23 @@ def fantasy_five_game():
     return render_template("/games/fantasy-five.html", num1=num1, num2=num2, num3=num3, num4=num4, num5=num5)
 
 
-@app.route("/games/mega-millions.html", methods=["GET", "POST"])
+@app.route("/national/mega-millions.html", methods=["GET", "POST"])
 def mega_millions_game():
     """
     :return: This function returns the six random numbers to be displayed on the Mega Millions page.
     """
     num1, num2, num3, num4, num5, mega = mega_millions()
-    return render_template("/games/mega-millions.html", num1=num1, num2=num2, num3=num3, num4=num4, num5=num5,
+    return render_template("/national/mega-millions.html", num1=num1, num2=num2, num3=num3, num4=num4, num5=num5,
                            mega=mega)
 
 
-@app.route("/games/powerball.html", methods=["GET", "POST"])
+@app.route("/national/powerball.html", methods=["GET", "POST"])
 def powerball_game():
     """
     :return: This function returns the six random numbers to be displayed on the Powerball page.
     """
     num1, num2, num3, num4, num5, power_ball = powerball()
-    return render_template("/games/powerball.html", num1=num1, num2=num2, num3=num3, num4=num4, num5=num5,
+    return render_template("/national/powerball.html", num1=num1, num2=num2, num3=num3, num4=num4, num5=num5,
                            power_ball=power_ball)
 
 
