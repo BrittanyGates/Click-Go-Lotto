@@ -21,6 +21,12 @@ body {
   text-align: center;
 }
 
+.game-img {
+  width: 60%;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
 .desktop-social-media {
   position: fixed;
   left: 0;
