@@ -1,9 +1,9 @@
 import random
 
 
-def cash3_pick3():
+def pick3():
     """
-    This function binds three numbers to random integers. Cash 3 / Pick 3 allows for duplicate numbers.
+    This function binds three numbers to random integers. Pick 3 allows for duplicate numbers.
     :return: The function returns three numbers to be displayed on the website.
     """
     num1 = random.randint(0, 9)
@@ -12,4 +12,4 @@ def cash3_pick3():
     return num1, num2, num3
 
 
-cash3_pick3()
+pick3()
