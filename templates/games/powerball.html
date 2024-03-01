@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Get lottery numbers for the Pick 3 game with a click of a button." />
-  <title>Pick 3 Lottery Numbers | Click-Go-Lotto</title>
+  <meta name="description" content="Get lottery numbers for the Powerball game with a click of a button." />
+  <title>Powerball Lottery Numbers | Click-Go-Lotto</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -49,7 +49,8 @@
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="mega-millions.html">Mega Millions</a></li>
-              <li><a class="dropdown-item" href="powerball.html">Powerball</a></li>
+              <li><a class="dropdown-item nav-link active" aria-current="page" href="powerball.html">Powerball</a>
+              </li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -61,9 +62,9 @@
               <li><a class="dropdown-item" href="cash4.html">Cash 4</a></li>
               <li><a class="dropdown-item" href="cash4life.html">Cash4Life</a></li>
               <li><a class="dropdown-item" href="fantasy-five.html">Fantasy Five</a></li>
-              <li><a class="dropdown-item nav-link active" aria-current="page" href="pick3.html">Pick 3</a></li>
+              <li><a class="dropdown-item" href="pick3.html">Pick 3</a></li>
               <li><a class="dropdown-item" href="pick4.html">Pick 4</a></li>
-              <li><a class="dropdown-item" href="pick5.html">Pick 5</a></li>              
+              <li><a class="dropdown-item" href="pick5.html">Pick 5</a></li>
             </ul>
           </li>
         </ul>
@@ -73,11 +74,11 @@
   <div class="container game-container">
     <div class="row">
       <div class="col-sm">
-        <img class="individual-game-img" src="#" alt="Pick 3 Logo">
-        <h1 class="lotto-num">{{ num1 }} - {{ num2 }} - {{ num3 }}</h1>
-        <form action="pick3.html" method="post">
+        <img class="individual-game-img" src="#" alt="Powerball Logo">
+        <h1 class="lotto-num">{{ num1 }} - {{ num2 }} - {{ num3 }} - {{ num4}} - {{ num5 }} | PB {{ power_ball }}</h1>
+        <form action="powerball.html" method="post">
           <button class="btn btn-lg" name="regenerate" type="submit"
-            onclick="{{ num1 }} {{ num2 }} {{ num3 }}">Click-Go-Lotto Again</button>
+            onclick="{{ num1 }} {{ num2 }} {{ num3 }} {{ num4 }} {{ num5 }} {{ power_ball }}">Click-Go-Lotto Again</button>
         </form>
       </div>
     </div>

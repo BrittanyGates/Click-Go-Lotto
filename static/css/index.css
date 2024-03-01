@@ -1,44 +1,51 @@
 /* GLOBAL STYLES */
 body {
-  /* background-image: url("/static/img/background.jpg"); */
   background-color: #000;
-  background-position: top;
   color: #FFF;
   font-family: 'Montserrat', sans-serif;
 }
 
-.navbar {
-  background-color: #FFF;
-}
-
-.navbar-brand, .nav-item, .nav-link {
-  color: #000;
-}
-
-.intro {
-  margin: auto;
-  display: block;
+h1 {
+  font-size: 3rem;
   text-align: center;
 }
 
-.game-img {
-  width: 60%;
-  border-radius: 1rem;
-  margin-bottom: 1rem;
+.game-menu {
+  width: 75%;
+  background-color: #FFF;
+  color: #000;
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 60rem;
 }
 
-.dropdown-menu {
-  max-height: 15rem;
-  overflow-y: auto;
+fieldset {
+  border: none;
+  padding: 2rem 0;
 }
 
-.desktop-social-media {
+label {
+  display: block;
+  margin: 1rem 0;
+}
+
+.contact-info {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   font-size: 1rem;
   text-align: center;
+}
+
+.contact-info a {
+  color: yellow;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  color: red;
+  text-decoration: none;
 }
 
 /* MOBILE DEVICE STYLES */

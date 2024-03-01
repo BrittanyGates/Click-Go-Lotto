@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Generate lottery numbers for Cash 4 / Pick 4" />
-  <title>Cash 4 / Pick 4 | Click-Go-Lotto</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <meta name="description" content="Get lottery numbers for the Cash 4 game with a click of a button." />
+  <title>Cash 4 Lottery Numbers | Click-Go-Lotto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="/static/css/index.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +31,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark">
+  <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <a class="navbar-brand" href="/">Click-Go-Lotto</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#defaultNavbar"
@@ -41,64 +41,56 @@
       <div class="collapse navbar-collapse" id="defaultNavbar">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="/">Home</a>
+            <a href="/">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="cash3-pick3.html">Cash 3 / Pick 3</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              National Lottery Games
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="mega-millions.html">Mega Millions</a></li>
+              <li><a class="dropdown-item" href="powerball.html">Powerball</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="cash4-pick4.html">Cash 4 / Pick 4</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="fantasy-five.html">Fantasy Five</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="mega-millions.html">Mega Millions</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="pick5.html">Pick 5</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="powerball.html">Powerball</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              State Lottery Games
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="cash3.html">Cash 3</a></li>
+              <li><a class="dropdown-item nav-link active" aria-current="page" href="cash4.html">Cash 4</a></li>
+              <li><a class="dropdown-item" href="cash4life.html">Cash4Life</a></li>
+              <li><a class="dropdown-item" href="fantasy-five.html">Fantasy Five</a></li>
+              <li><a class="dropdown-item" href="pick3.html">Pick 3</a></li>
+              <li><a class="dropdown-item" href="pick4.html">Pick 4</a></li>
+              <li><a class="dropdown-item" href="pick5.html">Pick 5</a></li>
+            </ul>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-
   <div class="container game-container">
     <div class="row">
       <div class="col-sm">
-        <img class="individual-game-img" src="/static/img/pick4.jpg" alt="Pick 4 Logo">
-      </div>
-      <div class="col-sm lotto-num-col">
+        <img class="individual-game-img" src="#" alt="Cash 4 Logo">
         <h1 class="lotto-num">{{ num1 }} - {{ num2 }} - {{ num3 }} - {{ num4 }}</h1>
-        <form action="cash4-pick4.html" method="post">
+        <form action="cash4.html" method="post">
           <button class="btn btn-lg" name="regenerate" type="submit"
-            onclick="{{ num1 }} {{ num2 }} {{ num3 }} {{ num4 }}">Click-Go
-            Again</button>
+            onclick="{{ num1 }} {{ num2 }} {{ num3 }} {{ num4 }}">Click-Go-Lotto Again</button>
         </form>
       </div>
     </div>
   </div>
-
-    <div class="container about-container">
-      <div class="row">
-        <div class="col">
-          <p class="my-info">Created by <a href="https://bcgates.com" title="My Website" target="_blank">Brittany
-              Gates</a> |
-            <a href="mailto:support@bcgates.com">support@bcgates.com</a> |
-            <a href="https://github.com/brittbot-bgates" title="My Github Profile" target="_blank"><i
-                class="bi bi-github"></i></a> | <a href="https://twitter.com/brittany__gates" title="My Twitter Profile"
-              target="_blank"><i class="bi bi-twitter"></i></a>
-          </p>
-        </div>
-      </div>
+  <footer>
+    <div class="col contact-info-col">
+      <p>Created by <a href="https://bcgates.com">Brittany Gates</a> | <a href="https://github.com/brittbot-bgates"
+          title="My Github account" target="_blank"><i class="bi bi-github"></i></a></p>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"></script>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
