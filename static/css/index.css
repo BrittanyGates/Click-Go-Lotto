@@ -5,6 +5,10 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.navbar {
+  background-color: #FFF;
+}
+
 h1 {
   font-size: 3rem;
   text-align: center;
@@ -19,17 +23,7 @@ h1 {
   max-width: 60rem;
 }
 
-fieldset {
-  border: none;
-  padding: 2rem 0;
-}
-
-label {
-  display: block;
-  margin: 1rem 0;
-}
-
-.contact-info {
+.contact-info-col {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -38,14 +32,35 @@ label {
   text-align: center;
 }
 
-.contact-info a {
+.contact-info-col a {
   color: yellow;
   text-decoration: none;
 }
 
-.contact-info a:hover {
+.contact-info-col a:hover {
   color: red;
   text-decoration: none;
+}
+
+/* GAME PAGE STYLES */
+.game-title {
+  font-size: 3rem;
+}
+
+.lotto-num {
+  text-align: center;
+}
+
+.game-btn {
+  background-color: #FFF;
+  color: #000;
+  margin: 0 auto;
+  display: block;
+}
+
+.game-btn:hover {
+  background-color: yellow;
+  color: #000;
 }
 
 /* MOBILE DEVICE STYLES */
