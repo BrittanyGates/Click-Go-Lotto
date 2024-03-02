@@ -1,5 +1,9 @@
 /* GLOBAL STYLES */
 body {
+  background-image: url(/static/img/logo.jpeg);
+  background-repeat: repeat-x;
+  background-position: top;
+  background-size: 50%;
   background-color: #000;
   color: #FFF;
   font-family: 'Montserrat', sans-serif;
@@ -9,9 +13,26 @@ body {
   background-color: #FFF;
 }
 
-h1 {
-  font-size: 3rem;
-  text-align: center;
+.site-container {
+  margin-top: 35vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 1.5rem;
+  width: 40%;
+  padding: 3rem;
+}
+
+.site-container, .national, .state {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.national {
+  margin-right: 2rem;
+}
+
+.state {
+  margin-left: 2rem;
 }
 
 .game-menu {
@@ -30,6 +51,7 @@ h1 {
   width: 100%;
   font-size: 1rem;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .contact-info-col a {
