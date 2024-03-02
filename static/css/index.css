@@ -10,12 +10,20 @@ body {
 }
 
 .navbar {
-  background-color: #FFF;
+  background-color: #a19885;
+}
+
+.navbar-brand, .nav-link {
+  color: #FFF;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: #000;
 }
 
 .site-container {
   margin-top: 35vh;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: #a19885;
   border-radius: 1.5rem;
   width: 40%;
   padding: 3rem;
@@ -35,6 +43,18 @@ body {
   margin-left: 2rem;
 }
 
+.btn {
+  background-color: #000;
+  color: #d4cec0;
+  border: none;
+  font-weight: 700;
+}
+
+.btn:hover {
+  background-color: #eee9dd;;
+  color: #000;
+}
+
 .game-menu {
   width: 75%;
   background-color: #FFF;
@@ -48,41 +68,53 @@ body {
   position: fixed;
   left: 0;
   bottom: 0;
+  padding-top: 0.25rem;
   width: 100%;
   font-size: 1rem;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: #a19885;
+  color: #000;
 }
 
 .contact-info-col a {
-  color: yellow;
+  color: #FFF;
   text-decoration: none;
 }
 
 .contact-info-col a:hover {
-  color: red;
+  color: #ecbe44;
   text-decoration: none;
 }
 
 /* GAME PAGE STYLES */
-.game-title {
-  font-size: 3rem;
+.game-container {
+  margin-top: 35vh;
+  background-color: #a19885;
+  border-radius: 1.5rem;
+  width: 40%;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.lotto-num {
+.game-container form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-title {
+  font-size: 3rem;
   text-align: center;
 }
 
-.game-btn {
-  background-color: #FFF;
+.lotto-num {
+  font-size: 2.5rem;
+  font-weight: 700;
   color: #000;
-  margin: 0 auto;
-  display: block;
-}
-
-.game-btn:hover {
-  background-color: yellow;
-  color: #000;
+  text-align: center;
+  margin: 2rem 0;
 }
 
 /* MOBILE DEVICE STYLES */
