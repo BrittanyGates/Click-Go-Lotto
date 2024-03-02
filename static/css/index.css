@@ -21,6 +21,10 @@ body {
   color: #000;
 }
 
+.dropdown-item.active, .dropdown-item:active {
+  background-color: #e9c46a;
+}
+
 .site-container {
   margin-top: 35vh;
   background-color: #a19885;
@@ -53,6 +57,11 @@ body {
 .btn:hover {
   background-color: #eee9dd;;
   color: #000;
+}
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+  background-color: #1b263b;
+  color: #FFF;
 }
 
 .game-menu {
