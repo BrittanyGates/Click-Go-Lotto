@@ -1,8 +1,8 @@
 # Click-Go-Lotto
-This web app randomly generates lottery numbers for Cash 3 / Pick3, Cash 4 / Pick 4, Fantasy Five, Mega Millions, Pick 5, and Powerball.
-## About The Project
-This project is a refactor of [Lotto-Number-Generator](https://github.com/brittbot-bgates/lotto-number-generator). I'm completely redesiging the web app and adding some new features.
 
-I refactoring this app to make it easier for everyone to use, including my mom. She plays the lottery and I wanted to create a website she could easily use to get random number whenever she wanted.
-## Website
-[Click-Go-Lotto](https://clickgolotto.com/)
+Get lottery numbers for Cash3, Cash4, Cash4Life, Fantasy Five, Mega Millions, Pick3, Pick4, Pick5, and Powerball with a click of a button.
+
+## About The Project
+
+* 3/1/24:
+    * I'm currently creating "Build v2" of the app to improve the layout and design. Plus, I added another lottery game. The changes aren't live on the website yet.

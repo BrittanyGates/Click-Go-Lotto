@@ -5,11 +5,12 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Click-Gos lottery numbers for popular games at the click of a button." />
-  <title>Click-Go-Lotto</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <meta name="description"
+    content="Get lottery numbers for Cash3, Cash4, Cash4Life, Fantasy Five, Mega Millions, Pick3, Pick4, Pick5, and Powerball with a click of a button." />
+  <title>Home | Click-Go-Lotto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="/static/css/index.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +32,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark">
+  <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <a class="navbar-brand" href="/">Click-Go-Lotto</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#defaultNavbar"
@@ -43,81 +44,78 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="/">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="games/cash3-pick3.html">Cash 3 / Pick 3</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              National Lottery Games
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="games/mega-millions.html">Mega Millions</a></li>
+              <li><a class="dropdown-item" href="games/powerball.html">Powerball</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="games/cash4-pick4.html">Cash 4 / Pick 4</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="games/fantasy-five.html">Fantasy Five</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="games/mega-millions.html">Mega Millions</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="games/pick5.html">Pick 5</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="games/powerball.html">Powerball</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              State Lottery Games
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="games/cash3.html">Cash 3</a></li>
+              <li><a class="dropdown-item" href="games/cash4.html">Cash 4</a></li>
+              <li><a class="dropdown-item" href="games/cash4life.html">Cash4Life</a></li>
+              <li><a class="dropdown-item" href="games/fantasy-five.html">Fantasy Five</a></li>
+              <li><a class="dropdown-item" href="games/pick3.html">Pick 3</a></li>
+              <li><a class="dropdown-item" href="games/pick4.html">Pick 4</a></li>
+              <li><a class="dropdown-item" href="games/pick5.html">Pick 5</a></li>
+            </ul>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-
-  <div class="container title-container">
-    <div class="row">
-      <h1 class="title">Click-Go-Lotto</h1>
+  <main>
+    <section>
+      <div class="container text-center">
+        <div class="row">
+          <div class="d-flex flex-column mh-100 justify-content-center align-items-center national">
+            <div class="dropdown-center">
+              <button class="btn btn-secondary dropdown-toggle btn-lg" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                National Games
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="games/mega-millions.html">Mega Millions</a></li>
+                <li><a class="dropdown-item" href="games/powerball.html">Powerball</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="d-flex flex-column mh-100 justify-content-center align-items-center states">
+            <div class="dropdown-center">
+              <button class="btn btn-secondary dropdown-toggle btn-lg" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                State Games
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="games/cash3.html">Cash 3</a></li>
+                <li><a class="dropdown-item" href="games/cash4.html">Cash 4</a></li>
+                <li><a class="dropdown-item" href="games/cash4life.html">Cash4Life</a></li>
+                <li><a class="dropdown-item" href="games/fantasy-five.html">Fantasy Five</a></li>
+                <li><a class="dropdown-item" href="games/pick3.html">Pick 3</a></li>
+                <li><a class="dropdown-item" href="games/pick4.html">Pick 4</a></li>
+                <li><a class="dropdown-item" href="games/pick5.html">Pick 5</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="col contact-info-col">
+      <p>Created by <a href="https://bcgates.com">Brittany Gates</a> | <a href="https://github.com/brittbot-bgates"
+          title="My Github account" target="_blank"><i class="bi bi-github"></i></a></p>
     </div>
-  </div>
-
-  <div class="container games-container-top">
-    <div class="row">
-      <div class="col-sm">
-        <a href="games/cash3-pick3.html"><img src="static/img/pick3.jpg" class="game-img" alt="Pick 3 Logo"></a>
-      </div>
-      <div class="col-sm">
-        <a href="games/cash4-pick4.html"><img src="static/img/pick4.jpg" class="game-img" alt="Pick 4 Logo"></a>
-      </div>
-      <div class="col-sm">
-        <a href="games/fantasy-five.html"><img src="static/img/fantasy_five.jpg" class="game-img"
-            alt="Fantasy Five Logo"></a>
-      </div>
-    </div>
-  </div>
-
-  <div class="container games-container-bottom">
-    <div class="row">
-      <div class="col-sm">
-        <a href="games/mega-millions.html"><img src="static/img/mega_millions.jpg" class="game-img"
-            alt="Mega Millions Logo"></a>
-      </div>
-      <div class="col-sm">
-        <a href="games/pick5.html"><img src="static/img/pick5.jpg" class="game-img" alt="Pick 5 Logo"></a>
-      </div>
-      <div class="col-sm">
-        <a href="games/powerball.html"><img src="static/img/powerball.jpg" class="game-img" alt="Powerball Logo"></a>
-      </div>
-    </div>
-  </div>
-
-  <div class="container about-container">
-    <div class="row">
-      <div class="col">
-        <p class="my-info">Created by <a href="https://bcgates.com" title="My Website" target="_blank">Brittany
-            Gates</a> |
-          <a href="mailto:support@bcgates.com">support@bcgates.com</a> |
-          <a href="https://github.com/brittbot-bgates" title="My Github Profile" target="_blank"><i
-              class="bi bi-github"></i></a> | <a href="https://twitter.com/brittany__gates" title="My Twitter Profile"
-            target="_blank"><i class="bi bi-twitter"></i></a>
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
 </body>
 
