@@ -10,3 +10,7 @@ Get lottery numbers for Cash3, Cash4, Cash4Life, Fantasy Five, Mega Millions, Pi
     * Completed the desktop version CSS for the entire site. Also, the app works properly now. However, it will not resize properly for mobile devices because I haven't completed the CSS for those devices yet.
 * 3/1/24:
     * I'm currently creating "Build v2" of the app to improve the layout and design. Plus, I added another lottery game. The changes aren't live on the website yet.
+
+## Website
+
+[clickgolotto.com](https://clickgolotto.com/)
