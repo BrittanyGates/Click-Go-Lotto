@@ -64,15 +64,6 @@ body {
   color: #FFF;
 }
 
-.game-menu {
-  width: 75%;
-  background-color: #FFF;
-  color: #000;
-  margin: 0 auto;
-  padding: 1rem;
-  max-width: 60rem;
-}
-
 .contact-info-col {
   position: fixed;
   left: 0;
@@ -118,7 +109,7 @@ body {
   text-align: center;
 }
 
-.lotto-num {
+.lotto-num-short, .lotto-num-long {
   font-size: 2.5rem;
   font-weight: 700;
   color: #000;
@@ -129,16 +120,137 @@ body {
 /* MOBILE DEVICE STYLES */
 
 /* SMALL PHONES */
+/* GLOBAL STYLES */
 @media only screen and (max-width: 600px) {
- 
+  body {
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+
+  .site-container {
+    width: 75%;
+  }
+
+  .national {
+    margin-right: unset;
+  }
+  
+  .state {
+    margin-top: 2rem;
+    margin-left: unset;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  /* GAME PAGE STYLES */
+  .game-container {
+    margin-top: 30vh;
+    width: 85%;
+    padding: 0.5rem;
+  }
+  
+  .game-title {
+    font-size: 2rem;
+  }
+
+  .lotto-num-short {
+    font-size: 2.5rem;
+    margin: 2rem 0;
+  }
+
+  .lotto-num-long {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .game-btn {
+    margin-bottom: 0.5rem;
+  }
 }
 
 /* TABLETS */
+/* GLOBAL STYLES */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
- 
+  body {
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+
+  .site-container {
+    width: 75%;
+  }
+
+  .btn {
+    font-size: 1.25rem;
+    padding: 0.5rem;
+  }
+
+  /* GAME PAGE STYLES */
+  .game-container {
+    margin-top: 30vh;
+    width: 85%;
+    padding: 0.5rem;
+  }
+  
+  .game-title {
+    font-size: 2rem;
+  }
+
+  .lotto-num-short {
+    font-size: 2.5rem;
+    margin: 2rem 0;
+  }
+
+  .lotto-num-long {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+
+  .game-btn {
+    margin-bottom: 0.5rem;
+  }   
 }
 
-/* LAPTOPS */
+/* SMALL LAPTOPS SCREENS */
+/* GLOBAL STYLES */
 @media only screen and (min-width: 1023px) and (max-width: 1439px) {
- 
+  body {
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+
+  .site-container {
+    width: 55%;
+  }
+
+  .btn {
+    font-size: 1.25rem;
+    padding: 0.5rem;
+  }
+
+  /* GAME PAGE STYLES */
+  .game-container {
+    margin-top: 30vh;
+    width: 55%;
+    padding: 0.5rem;
+  }
+
+  .game-btn {
+    margin-bottom: 0.5rem;
+  } 
+}
+
+/* MEDIUM LAPTOP SCREENS */
+@media only screen and (min-width: 1440px) and (max-width: 1680px) {
+  body {
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 100%;
+  }
 }

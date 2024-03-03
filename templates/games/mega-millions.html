@@ -72,9 +72,9 @@
     <div class="row">
       <div class="col">
         <h1 class="game-title">Mega Millions</h1>
-        <h2 class="lotto-num">{{ num1 }} - {{ num2 }} - {{ num3 }} - {{ num4}} - {{ num5 }} | MB {{ mega}}</h2>
+        <h2 class="lotto-num-long">{{ num1 }} - {{ num2 }} - {{ num3 }} - {{ num4}} - {{ num5 }} | MB {{ mega}}</h2>
         <form action="mega-millions.html" method="post">
-          <button class="btn btn-lg" name="regenerate" type="submit"
+          <button class="btn btn-lg game-btn" name="regenerate" type="submit"
             onclick="{{ num1 }} {{ num2 }} {{ num3 }} {{ num4 }} {{ num5 }} {{ mega }}">Click-Go-Lotto Again</button>
         </form>
       </div>
