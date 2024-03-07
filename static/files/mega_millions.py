@@ -3,10 +3,9 @@ import random
 
 def mega_millions():
     """
-    This function binds six variables to random integers. Mega Millions doesn't allow for duplicate numbers (except for
-    the Mega Ball which can be the same number as any of the five numbers). That is why I created specific ranges for
-    each set of numbers.
-    :return: The function returns six numbers to be displayed on the website.
+    Binds six numbers to random integers. Mega Millions only allows the Mega Ball to have a duplicate number 
+    (compared to the other five numbers). 
+    :return: Returns six random numbers to the games/mega-millions.html page.
     """
     num1 = random.randint(1, 13)
     num2 = random.randint(14, 26)
@@ -14,7 +13,7 @@ def mega_millions():
     num4 = random.randint(40, 52)
     num5 = random.randint(53, 70)
     mega_ball = random.randint(1, 25)
-    return num1, num2, num3, num4, num5, mega_ball
+    return num3, num1, num5, num2, num4, mega_ball
 
 
 mega_millions()

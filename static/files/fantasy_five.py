@@ -3,10 +3,8 @@ import random
 
 def fantasy_five():
     """
-    This function binds five variables to random integers. Fantasy 5 doesn't allow for duplicate numbers.
-    That is why I created specific ranges for each set of numbers.
-    :return: The function returns five numbers to be displayed on the website. They aren't in order to give the
-    appearance of randomness.
+    Binds six numbers to random integers. Fantasy Five doesn't allow for duplicate numbers.
+    :return: Returns five random numbers to the games/fantasy-five.html page.
     """
     num1 = random.randint(1, 7)
     num2 = random.randint(8, 17)

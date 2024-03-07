@@ -32,14 +32,14 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     """
-    :return: This function loads the index.html page.
+    :return: The index.html page.
     """
     return render_template("index.html")
 
 @app.route("/games/cash3.html", methods=["GET", "POST"])
 def cash3_game():
     """
-    :return: This function returns the three random numbers to be displayed on the Cash 3 page.
+    :return: The games/cash3.html page populated with the numbers from the static/files/cash3.py file.
     """
     num1, num2, num3 = cash3()
     return render_template("/games/cash3.html", num1=num1, num2=num2, num3=num3)
@@ -47,7 +47,7 @@ def cash3_game():
 @app.route("/games/cash4.html", methods=["GET", "POST"])
 def cash4_game():
     """
-    :return: This function returns the four random numbers to be displayed on the Cash 4 page.
+    :return: The games/cash4.html page populated with the numbers from the static/files/cash4.py file.
     """
     num1, num2, num3, num4 = cash4()
     return render_template("/games/cash4.html", num1=num1, num2=num2, num3=num3, num4=num4)
@@ -55,7 +55,7 @@ def cash4_game():
 @app.route("/games/cash4life.html", methods=["GET", "POST"])
 def cash4life_game():
     """
-    :return: This function returns the six random numbers to be displayed on the Cash4Life page.
+    :return: The games/cash4life.html page populated with the numbers from the static/files/cash4life.py file.
     """
     num1, num2, num3, num4, num5, cash_ball = cash4life()
     return render_template("/games/cash4life.html", num1=num1, num2=num2, num3=num3, num4=num4, num5=num5,
@@ -64,7 +64,7 @@ def cash4life_game():
 @app.route("/games/fantasy-five.html", methods=["GET", "POST"])
 def fantasy_five_game():
     """
-    :return: This function returns the five random numbers to be displayed on the Fantasy Five page.
+    :return: The games/fantasy-five.html page populated with the numbers from the static/files/fantasy_five.py file.
     """
     num1, num2, num3, num4, num5 = fantasy_five()
     return render_template("/games/fantasy-five.html", num1=num1, num2=num2, num3=num3, num4=num4, num5=num5)
@@ -72,7 +72,7 @@ def fantasy_five_game():
 @app.route("/games/mega-millions.html", methods=["GET", "POST"])
 def mega_millions_game():
     """
-    :return: This function returns the six random numbers to be displayed on the Mega Millions page.
+    :return: The games/mega-millions.html page populated with the numbers from the static/files/mega_millions.py file.
     """
     num1, num2, num3, num4, num5, mega = mega_millions()
     return render_template("/games/mega-millions.html", num1=num1, num2=num2, num3=num3, num4=num4, num5=num5,
@@ -81,7 +81,7 @@ def mega_millions_game():
 @app.route("/games/pick3.html", methods=["GET", "POST"])
 def pick3_game():
     """
-    :return: This function returns the three random numbers to be displayed on the Pick 3 page.
+    :return: The games/pick3.html page populated with the numbers from the static/files/pick3.py file.
     """
     num1, num2, num3 = pick3()
     return render_template("/games/pick3.html", num1=num1, num2=num2, num3=num3)
@@ -89,7 +89,7 @@ def pick3_game():
 @app.route("/games/pick4.html", methods=["GET", "POST"])
 def pick4_game():
     """
-    :return: This function returns the four random numbers to be displayed on the Pick 4 page.
+    :return: The games/cash4.html page populated with the numbers from the static/files/cash4.py file.
     """
     num1, num2, num3, num4 = pick4()
     return render_template("/games/pick4.html", num1=num1, num2=num2, num3=num3, num4=num4)
@@ -98,7 +98,7 @@ def pick4_game():
 @app.route("/games/pick5.html", methods=["GET", "POST"])
 def pick5_game():
     """
-    :return: This function returns the five random numbers to be displayed on the Pick 5 page.
+    :return: The games/pick5.html page populated with the numbers from the static/files/pick5.py file.
     """
     num1, num2, num3, num4, num5 = pick5()
     return render_template("/games/pick5.html", num1=num1, num2=num2, num3=num3, num4=num4, num5=num5)
@@ -106,11 +106,11 @@ def pick5_game():
 @app.route("/games/powerball.html", methods=["GET", "POST"])
 def powerball_game():
     """
-    :return: This function returns the six random numbers to be displayed on the Powerball page.
+    :return: The games/powerball.html page populated with the numbers from the static/files/powerball.py file.
     """
-    num1, num2, num3, num4, num5, power_ball = powerball()
+    num1, num2, num3, num4, num5, red_powerball = powerball()
     return render_template("/games/powerball.html", num1=num1, num2=num2, num3=num3, num4=num4, num5=num5,
-                           power_ball=power_ball)
+                           red_powerball=red_powerball)
 
 
 if __name__ == '__main__':

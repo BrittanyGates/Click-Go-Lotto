@@ -3,8 +3,8 @@ import random
 
 def cash4():
     """
-    This function binds four numbers to random integers. Cash 4 allows for duplicate numbers.
-    :return: The function returns four numbers to be displayed on the website.
+    Binds four numbers to random integers. Cash4 allows for duplicate numbers.
+    :return: Returns three random numbers to the games/cash4.html page.
     """
     num1 = random.randint(0, 9)
     num2 = random.randint(0, 9)
