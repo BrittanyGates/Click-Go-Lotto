@@ -3,8 +3,8 @@ import random
 
 def cash3():
     """
-    This function binds three numbers to random integers. Cash 3 allows for duplicate numbers.
-    :return: The function returns three numbers to be displayed on the website.
+    Binds three numbers to random integers. Cash3 allows for duplicate numbers.
+    :return: Returns three random numbers to the games/cash3.html page.
     """
     num1 = random.randint(0, 9)
     num2 = random.randint(0, 9)

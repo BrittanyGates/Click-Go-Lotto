@@ -3,8 +3,8 @@ import random
 
 def pick5():
     """
-    This function binds four numbers to random integers. Pick 5 allows for duplicate numbers.
-    :return: The function returns four numbers to be displayed on the website.
+    Binds five numbers to random integers. Pick5 allows for duplicate numbers.
+    :return: Returns five random numbers to the games/pick5.html page.
     """
     num1 = random.randint(0, 9)
     num2 = random.randint(0, 9)
