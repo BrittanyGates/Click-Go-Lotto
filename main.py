@@ -1,116 +1,105 @@
 #!/usr/bin/env python3
-"""
-Title: Lotto Number Generator
-Creator: Brittany Gates (https://github.com/brittbot-bgates) | (https://bcgates.com)
-About: This web app randomly generates lottery numbers for the following games:
-- Cash 3
-- Cash 4
-- Cash4Life
-- Fantasy 5
-- Mega Millions
-- Pick 3
-- Pick 4
-- Pick 5
-- Powerball
+"""Click-Go-Lotto
+Creator: Brittany Gates (https://github.com/brittbot-bgates) | (https://www.linkedin.com/in/brittanycgates) | (https://brittbot.com/)
+About: Randomly generates lottery numbers for the multiple popular national and state games.
 """
 
 from flask import Flask, render_template
-from static.files.cash3 import cash3
-from static.files.cash4 import cash4
-from static.files.cash4life import cash4life
-from static.files.fantasy_five import fantasy_five
-from static.files.mega_millions import mega_millions
-from static.files.pick3 import pick3
-from static.files.pick4 import pick4
-from static.files.pick5 import pick5
-from static.files.powerball import powerball
-
+from static.files.games import *
 
 app = Flask(__name__)
 
 
 @app.route("/")
-def index():
-    """
-    :return: The index.html page.
+def index() -> render_template:
+    """Displays the index.html template.
+    :return: Home pages displaying the National and State game buttons.
     """
     return render_template("index.html")
 
+
 @app.route("/games/cash3.html", methods=["GET", "POST"])
-def cash3_game():
-    """
-    :return: The games/cash3.html page populated with the numbers from the static/files/cash3.py file.
+def cash3_game() -> render_template:
+    """Displays the cash3.html template.
+    :return: Cash 3 page displaying the three random numbers.
     """
     num1, num2, num3 = cash3()
     return render_template("/games/cash3.html", num1=num1, num2=num2, num3=num3)
 
+
 @app.route("/games/cash4.html", methods=["GET", "POST"])
-def cash4_game():
-    """
-    :return: The games/cash4.html page populated with the numbers from the static/files/cash4.py file.
+def cash4_game() -> render_template:
+    """Displays the cash4.html template.
+    :return: Cash 4 page displaying the four random numbers.
     """
     num1, num2, num3, num4 = cash4()
     return render_template("/games/cash4.html", num1=num1, num2=num2, num3=num3, num4=num4)
 
+
 @app.route("/games/cash4life.html", methods=["GET", "POST"])
-def cash4life_game():
-    """
-    :return: The games/cash4life.html page populated with the numbers from the static/files/cash4life.py file.
+def cash4life_game() -> render_template:
+    """Displays the cash4life.html template.
+    :return: Cash4Life page displaying the six random numbers.
     """
     num1, num2, num3, num4, num5, cash_ball = cash4life()
     return render_template("/games/cash4life.html", num1=num1, num2=num2, num3=num3, num4=num4, num5=num5,
                            cash_ball=cash_ball)
 
+
 @app.route("/games/fantasy-five.html", methods=["GET", "POST"])
-def fantasy_five_game():
-    """
-    :return: The games/fantasy-five.html page populated with the numbers from the static/files/fantasy_five.py file.
+def fantasy_five_game() -> render_template:
+    """Displays the fantasy-five.html template.
+    :return: Fantasy Five page displaying the five random numbers.
     """
     num1, num2, num3, num4, num5 = fantasy_five()
     return render_template("/games/fantasy-five.html", num1=num1, num2=num2, num3=num3, num4=num4, num5=num5)
 
+
 @app.route("/games/mega-millions.html", methods=["GET", "POST"])
-def mega_millions_game():
-    """
-    :return: The games/mega-millions.html page populated with the numbers from the static/files/mega_millions.py file.
+def mega_millions_game() -> render_template:
+    """Displays the mega-millions.html template.
+    :return: Mega Millions page displaying the six random numbers.
     """
     num1, num2, num3, num4, num5, mega = mega_millions()
     return render_template("/games/mega-millions.html", num1=num1, num2=num2, num3=num3, num4=num4, num5=num5,
                            mega=mega)
 
+
 @app.route("/games/pick3.html", methods=["GET", "POST"])
-def pick3_game():
-    """
-    :return: The games/pick3.html page populated with the numbers from the static/files/pick3.py file.
+def pick3_game() -> render_template:
+    """Displays the pick3.html template.
+    :return: Pick 3 page displaying the three random numbers.
     """
     num1, num2, num3 = pick3()
     return render_template("/games/pick3.html", num1=num1, num2=num2, num3=num3)
 
+
 @app.route("/games/pick4.html", methods=["GET", "POST"])
-def pick4_game():
-    """
-    :return: The games/cash4.html page populated with the numbers from the static/files/cash4.py file.
+def pick4_game() -> render_template:
+    """Displays the pick4.html template.
+    :return: Pick 4 page displaying the four random numbers.
     """
     num1, num2, num3, num4 = pick4()
     return render_template("/games/pick4.html", num1=num1, num2=num2, num3=num3, num4=num4)
 
 
 @app.route("/games/pick5.html", methods=["GET", "POST"])
-def pick5_game():
-    """
-    :return: The games/pick5.html page populated with the numbers from the static/files/pick5.py file.
+def pick5_game() -> render_template:
+    """Displays the pick5.html template.
+    :return: Pick 5 page displaying the five random numbers.
     """
     num1, num2, num3, num4, num5 = pick5()
     return render_template("/games/pick5.html", num1=num1, num2=num2, num3=num3, num4=num4, num5=num5)
 
+
 @app.route("/games/powerball.html", methods=["GET", "POST"])
-def powerball_game():
+def powerball_game() -> render_template:
+    """Displays the powerball.html template.
+    :return: Powerball page displaying the six random numbers.
     """
-    :return: The games/powerball.html page populated with the numbers from the static/files/powerball.py file.
-    """
-    num1, num2, num3, num4, num5, red_powerball = powerball()
+    num1, num2, num3, num4, num5, power_ball = powerball()
     return render_template("/games/powerball.html", num1=num1, num2=num2, num3=num3, num4=num4, num5=num5,
-                           red_powerball=red_powerball)
+                           power_ball=power_ball)
 
 
 if __name__ == '__main__':

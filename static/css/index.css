@@ -118,9 +118,10 @@ body {
 }
 
 /* MOBILE DEVICE STYLES */
-/* PHONES */
+
+/* SMALL PHONES */
+/* GLOBAL STYLES */
 @media only screen and (max-width: 600px) {
-  /* GLOBAL STYLES */
   body {
     background-repeat: repeat;
     background-position: center;
@@ -147,7 +148,7 @@ body {
 
   /* GAME PAGE STYLES */
   .game-container {
-    margin-top: 20vh;
+    margin-top: 30vh;
     width: 85%;
     padding: 0.5rem;
   }
@@ -172,8 +173,8 @@ body {
 }
 
 /* TABLETS */
+/* GLOBAL STYLES */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  /* GLOBAL STYLES */
   body {
     background-repeat: repeat;
     background-position: center;
@@ -191,7 +192,7 @@ body {
 
   /* GAME PAGE STYLES */
   .game-container {
-    margin-top: 20vh;
+    margin-top: 30vh;
     width: 85%;
     padding: 0.5rem;
   }
@@ -216,8 +217,8 @@ body {
 }
 
 /* SMALL LAPTOPS SCREENS */
+/* GLOBAL STYLES */
 @media only screen and (min-width: 1023px) and (max-width: 1439px) {
-  /* GLOBAL STYLES */
   body {
     background-repeat: repeat;
     background-position: center;
@@ -235,7 +236,7 @@ body {
 
   /* GAME PAGE STYLES */
   .game-container {
-    margin-top: 20vh;
+    margin-top: 30vh;
     width: 55%;
     padding: 0.5rem;
   }
@@ -247,7 +248,6 @@ body {
 
 /* MEDIUM LAPTOP SCREENS */
 @media only screen and (min-width: 1440px) and (max-width: 1680px) {
-  /* GLOBAL STYLES */
   body {
     background-repeat: repeat;
     background-position: center;
