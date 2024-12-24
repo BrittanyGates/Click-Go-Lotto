@@ -18,11 +18,12 @@ provide the random lottery numbers. Visitors can get a new set of numbers for a 
 
 ## Website
 
-[click-go-lotto](https://clickgolotto.com/)
+[clickgolotto.com](https://clickgolotto.com/)
 
 ## Help
 
-* If you find a problem with the website or the code please raise an issue in the GitHub repo.
+* Please file a new issue using the [Issues](https://github.com/brittbot-bgates/Click-Go-Lotto/issues) tab on the
+  repo.
 
 ## Authors
 
