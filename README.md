@@ -50,5 +50,5 @@ provide the random lottery numbers. Visitors can get a new set of numbers for a 
 
 ## Acknowledgments
 
-* [Dominique Pizzie](https://gist.github.com/DomPizzie) for the simple README template
+* [Dominique Pizzie](https://gist.github.com/DomPizzie) for the simple README template.
 
