@@ -48,6 +48,10 @@ provide the random lottery numbers. Visitors can get a new set of numbers for a 
     * I'm currently creating "Build v2" of the app to improve the layout and design. Plus, I added another lottery game.
       The changes aren't live on the website yet.
 
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
 ## Acknowledgments
 
 * [Dominique Pizzie](https://gist.github.com/DomPizzie) for the simple README template.
