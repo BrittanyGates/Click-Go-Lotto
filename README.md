@@ -25,7 +25,7 @@ provide the random lottery numbers. Visitors can get a new set of numbers for a 
 * Please file a new issue using the [Issues](https://github.com/brittbot-bgates/Click-Go-Lotto/issues) tab on the
   repo.
 
-## Authors
+## Author
 
 * Brittany Gates
     * [Website](https://brittbot.com)
