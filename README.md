@@ -37,17 +37,14 @@ Brittany Gates
 
 ## Version History
 
-* v2.1 release
+* Latest release notes as of 12/25
     * Consolidated all the individual modules for each game into one module.
     * Added type annotations to all the functions and variables.
     * Added a gitignore file.
+    * Updated the social media links in the index.html footer.
     * Fixed typos.
-* Pre-v2.1 release
-    * Completed the redesign of the website, and uploaded it to Google Cloud for deployment.
-    * Completed the desktop version CSS for the entire site. Also, the app works properly now. However, it will not
-      resize properly for mobile devices because I haven't completed the CSS for those devices yet.
-    * I'm currently creating "Build v2" of the app to improve the layout and design. Plus, I added another lottery game.
-      The changes aren't live on the website yet.
+    * Removed unnecessary files from the repo.
+    * Updated the README
 
 ## Acknowledgments
 
