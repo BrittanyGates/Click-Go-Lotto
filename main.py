@@ -13,7 +13,7 @@ app = Flask(__name__)
 @app.route("/")
 def index() -> render_template:
     """Displays the index.html template.
-    :return: Home pages displaying the National and State game buttons.
+    :return: Homepage displaying the National and State game buttons.
     """
     return render_template("index.html")
 

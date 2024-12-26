@@ -46,6 +46,10 @@ Brittany Gates
     * Removed unnecessary files from the repo.
     * Updated the README
 
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
 ## Acknowledgments
 
 [Dominique Pizzie](https://gist.github.com/DomPizzie) for the simple README template
