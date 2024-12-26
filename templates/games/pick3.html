@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Get lottery numbers for Pick 3 with a click of a button." />
+  <title>Pick 3 Lottery Numbers | Click-Go-Lotto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/static/css/index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="/static/favicon/site.webmanifest" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XRHJHKQMM2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-XRHJHKQMM2');
+  </script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Click-Go-Lotto</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#defaultNavbar"
+        aria-controls="defaultNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="defaultNavbar">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              National Lottery Games
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="mega-millions.html">Mega Millions</a></li>
+              <li><a class="dropdown-item" href="powerball.html">Powerball</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              State Lottery Games
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="cash3.html">Cash 3</a></li>
+              <li><a class="dropdown-item" href="cash4.html">Cash 4</a></li>
+              <li><a class="dropdown-item" href="cash4life.html">Cash4Life</a></li>
+              <li><a class="dropdown-item" href="fantasy-five.html">Fantasy Five</a></li>
+              <li><a class="dropdown-item nav-link active" aria-current="page" href="pick3.html">Pick 3</a></li>
+              <li><a class="dropdown-item" href="pick4.html">Pick 4</a></li>
+              <li><a class="dropdown-item" href="pick5.html">Pick 5</a></li>              
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container game-container">
+    <div class="row">
+      <div class="col">
+        <h1 class="game-title">Pick3</h1>
+        <h2 class="lotto-num-short">{{ num1 }} - {{ num2 }} - {{ num3 }}</h2>
+        <form action="pick3.html" method="post">
+          <button class="btn btn-lg game-btn" name="regenerate" type="submit"
+            onclick="{{ num1 }} {{ num2 }} {{ num3 }}">Click-Go-Lotto Again</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="col contact-info-col">
+      <p>Created by <a href="https://bcgates.com" title="My website" target="_blank">Brittany Gates</a> | <a
+          href="https://github.com/brittbot-bgates" title="My Github account" target="_blank"><i
+            class="bi bi-github"></i></a></p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
