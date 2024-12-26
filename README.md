@@ -37,7 +37,7 @@ Brittany Gates
 
 ## Version History
 
-* Latest release notes as of 12/25
+* Latest release notes as of late December 2024.
     * Consolidated all the individual modules for each game into one module.
     * Added type annotations to all the functions and variables.
     * Added a gitignore file.
