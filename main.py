@@ -5,7 +5,7 @@ About: Randomly generates lottery numbers for the multiple popular national and 
 """
 
 from flask import Flask, render_template
-from static.files.games import *
+from static.files.games import cash3, cash4, cash4life, fantasy_five, mega_millions, pick3, pick4, pick5, powerball
 
 app = Flask(__name__)
 

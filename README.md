@@ -37,14 +37,15 @@ Brittany Gates
 
 ## Version History
 
-* Latest release notes as of late December 2024.
+* Latest release notes as of January 2025:
+    * Updated the footer on all pages to display all my social media links.
+* Latest release notes as of late December 2024:
     * Consolidated all the individual modules for each game into one module.
     * Added type annotations to all the functions and variables.
     * Added a gitignore file.
     * Updated the social media links in the index.html footer.
     * Fixed typos.
     * Removed unnecessary files from the repo.
-    * Updated the README
 
 ## License
 
