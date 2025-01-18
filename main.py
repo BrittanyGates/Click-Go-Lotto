@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Click-Go-Lotto
-Creator: Brittany Gates (https://github.com/brittbot-bgates) | (https://www.linkedin.com/in/brittanycgates) | (https://brittbot.com/)
+Creator: Brittany Gates (https://github.com/BrittanyGates) | (https://www.linkedin.com/in/brittanycgates) |
+(https://brittbot.com/)
 About: Randomly generates lottery numbers for the multiple popular national and state games.
 """
 
