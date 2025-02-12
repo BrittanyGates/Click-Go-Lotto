@@ -5,14 +5,12 @@
 Get lottery numbers for Cash3, Cash4, Cash4Life, Fantasy Five, Mega Millions, Pick3, Pick4, Pick5, and Powerball with a
 click of a button.
 
-## Description
+## About The Program
 
 This web applications uses the Bootstrap on the Front-End and Python/Flask on the Back-End to display the website and
 provide the random lottery numbers. Visitors can get a new set of numbers for a specific game by clicking on the button.
 
-## Getting Started
-
-### Dependencies
+## Dependencies
 
 A modern web browser (like Google Chrome) with JavaScript enabled.
 
@@ -25,7 +23,7 @@ A modern web browser (like Google Chrome) with JavaScript enabled.
 Please file a new issue using the [Issues](https://github.com/brittbot-bgates/Click-Go-Lotto/issues) tab on the
 repo.
 
-## Authors
+## Creator
 
 Brittany Gates
 
@@ -37,6 +35,8 @@ Brittany Gates
 
 ## Version History
 
+* Latest release notes as of February 2025:
+    * Updated the README.
 * Latest release notes as of January 2025:
     * Updated the footer on all pages to display all my social media links.
 * Latest release notes as of late December 2024:
