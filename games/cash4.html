@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Cash4 Lottery Numbers{% endblock %}
+
+{% block content %}
+  <div class="container game-container">
+    <div class="row">
+      <div class="col">
+        <h1 class="game-title">Cash4</h1>
+        <h2 class="lotto-num-short">{{ num1 }} - {{ num2 }} - {{ num3 }} - {{ num4 }}</h2>
+        <form action="{{ url_for('cash4_game') }}" method="post">
+          <button class="btn btn-lg game-btn" name="regenerate" type="submit"
+            onclick="{{ num1 }} {{ num2 }} {{ num3 }} {{ num4 }}">Click-Go-Lotto Again</button>
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}
