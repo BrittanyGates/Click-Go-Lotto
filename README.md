@@ -27,6 +27,7 @@ Please file a new issue using the [Issues](https://github.com/brittbot-bgates/Cl
 * Latest release notes as of March 2025:
     * Created a base.html template
     * Extended the base.html template to all the html files in the project.
+    * Added the latest winning lottery numbers for Cash4Life, Mega Millions, and Powerball.
 * Latest release notes as of February 2025:
     * Updated the README.
 * Latest release notes as of January 2025:

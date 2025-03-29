@@ -4,36 +4,36 @@
 
 {% block content %}
 <section>
-    <div class="container site-container">
+    <div class="container">
         <div class="row">
             <div class="col national">
                 <div class="dropdown-center">
-                    <button class="btn btn-secondary dropdown-toggle btn-lg" type="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="btn btn-secondary dropdown-toggle btn-lg" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
                         National Games
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{{ url_for('mega_millions_game') }}">Mega
+                        <li><a class="dropdown-item" href="{{ url_for('routes.mega_millions_game') }}">Mega
                                 Millions</a></li>
-                        <li><a class="dropdown-item" href="{{ url_for('powerball_game') }}">Powerball</a></li>
+                        <li><a class="dropdown-item" href="{{ url_for('routes.powerball_game') }}">Powerball</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col state">
                 <div class="dropdown-center">
-                    <button class="btn btn-secondary dropdown-toggle btn-lg" type="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="btn btn-secondary dropdown-toggle btn-lg" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
                         State Games
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{{ url_for('cash3_game') }}">Cash 3</a></li>
-                        <li><a class="dropdown-item" href="{{ url_for('cash4_game') }}">Cash 4</a></li>
-                        <li><a class="dropdown-item" href="{{ url_for('cash4life_game') }}">Cash4Life</a></li>
-                        <li><a class="dropdown-item" href="{{ url_for('fantasy_five_game') }}">Fantasy Five</a>
+                        <li><a class="dropdown-item" href="{{ url_for('routes.cash3_game') }}">Cash 3</a></li>
+                        <li><a class="dropdown-item" href="{{ url_for('routes.cash4_game') }}">Cash 4</a></li>
+                        <li><a class="dropdown-item" href="{{ url_for('routes.cash4life_game') }}">Cash4Life</a></li>
+                        <li><a class="dropdown-item" href="{{ url_for('routes.fantasy_five_game') }}">Fantasy Five</a>
                         </li>
-                        <li><a class="dropdown-item" href="{{ url_for('pick3_game') }}">Pick 3</a></li>
-                        <li><a class="dropdown-item" href="{{ url_for('pick4_game') }}">Pick 4</a></li>
-                        <li><a class="dropdown-item" href="{{ url_for('pick5_game') }}">Pick 5</a></li>
+                        <li><a class="dropdown-item" href="{{ url_for('routes.pick3_game') }}">Pick 3</a></li>
+                        <li><a class="dropdown-item" href="{{ url_for('routes.pick4_game') }}">Pick 4</a></li>
+                        <li><a class="dropdown-item" href="{{ url_for('routes.pick5_game') }}">Pick 5</a></li>
                     </ul>
                 </div>
             </div>
