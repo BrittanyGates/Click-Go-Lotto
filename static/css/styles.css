@@ -1,0 +1,367 @@
+/* GLOBAL STYLES */
+body {
+  background-image: url(/static/img/click_go_lotto_gemini_generated.jpeg);
+  background-repeat: repeat-x;
+  background-position: top;
+  background-size: 50%;
+  background-color: #000;
+  color: #FFF;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+  background-color: #a19885;
+}
+
+.navbar-brand,
+.nav-link {
+  color: #FFF;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: #000;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #e9c46a;
+}
+
+.container {
+  margin-top: 35vh;
+  background-color: #a19885;
+  border-radius: 1.5rem;
+  padding: 3rem;
+  width: 50%;
+}
+
+.container,
+.national,
+.state {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.national {
+  margin-right: 3rem;
+}
+
+.state {
+  margin-left: 3rem;
+}
+
+.btn {
+  background-color: #000;
+  color: #d4cec0;
+  border: none;
+  font-weight: 700;
+}
+
+.btn:hover {
+  background-color: #eee9dd;
+  ;
+  color: #000;
+}
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+  background-color: #1b263b;
+  color: #FFF;
+}
+
+.contact-info-col {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding-top: 0.25rem;
+  width: 100%;
+  font-size: 1rem;
+  text-align: center;
+  background-color: #a19885;
+  color: #000;
+}
+
+.contact-info-col a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.contact-info-col a:hover {
+  color: #ecbe44;
+  text-decoration: none;
+}
+
+/* GAME PAGE STYLES */
+.game-container {
+  margin-top: 30vh;
+  background-color: #a19885;
+  border-radius: 1.5rem;
+  width: 40%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-container-with-latest-winning-numbers {
+  margin-top: 25vh;
+  background-color: #a19885;
+  border-radius: 1.5rem;
+  width: 50%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.winning-numbers-header {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.date-header,
+.winning-numbers {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.winning-numbers {
+  margin-bottom: 1.5rem;
+}
+
+.game-container form,
+.game-container-with-latest-winning-numbers form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-title {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.cash4life-title,
+.mega-millions-title,
+.powerball-title {
+  font-size: 1.75rem;
+  text-align: center;
+  color: #000;
+}
+
+.lotto-num-short,
+.lotto-num-long {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.cash4life-lotto-num,
+.mega-millions-lotto-num,
+.powerball-lotto-num {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+/* MOBILE DEVICE STYLES */
+
+/* SMALL PHONES */
+/* GLOBAL STYLES */
+@media only screen and (max-width: 600px) {
+  body {
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+
+  .national {
+    margin-right: unset;
+  }
+
+  .state {
+    margin-top: 2rem;
+    margin-left: unset;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  /* GAME PAGE STYLES */
+  .game-container {
+    margin-top: 30vh;
+    width: 85%;
+    padding: 0.5rem;
+  }
+
+  .game-container-with-latest-winning-numbers {
+    margin-top: 25vh;
+    width: 85%;
+    padding: 0.5rem;
+  }
+
+  .winning-numbers-header {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .date-header,
+  .winning-numbers {
+    font-size: 1rem;
+  }
+
+  .winning-numbers {
+    margin-bottom: 1rem;
+  }
+
+  .game-title {
+    font-size: 2rem;
+  }
+
+  .cash4life-title,
+  .mega-millions-title,
+  .powerball-title {
+    font-size: 1.25rem;
+  }
+
+  .lotto-num-short {
+    font-size: 2.5rem;
+    margin: 2rem 0;
+  }
+
+  .lotto-num-long {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .cash4life-lotto-num,
+  .mega-millions-lotto-num,
+  .powerball-lotto-num {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+  }
+
+  .game-btn {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* TABLETS */
+/* GLOBAL STYLES */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+
+  .btn {
+    font-size: 1.25rem;
+    padding: 0.5rem;
+  }
+
+  /* GAME PAGE STYLES */
+  .game-container {
+    margin-top: 30vh;
+    width: 85%;
+    padding: 0.5rem;
+  }
+
+  .game-container-with-latest-winning-numbers {
+    margin-top: 25vh;
+    width: 85%;
+    padding: 0.5rem;
+  }
+
+  .winning-numbers-header {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .date-header,
+  .winning-numbers {
+    font-size: 1.25rem;
+  }
+
+  .winning-numbers {
+    margin-bottom: 1.25rem;
+  }
+
+  .game-title {
+    font-size: 2rem;
+  }
+
+  .cash4life-title,
+  .mega-millions-title,
+  .powerball-title {
+    font-size: 1.25rem;
+  }
+
+  .lotto-num-short {
+    font-size: 2.5rem;
+    margin: 2rem 0;
+  }
+
+  .lotto-num-long {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+
+  .cash4life-lotto-num,
+  .mega-millions-lotto-num,
+  .powerball-lotto-num {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+  }
+
+  .game-btn {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* SMALL LAPTOPS SCREENS */
+/* GLOBAL STYLES */
+@media only screen and (min-width: 1023px) and (max-width: 1439px) {
+  body {
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+
+  .btn {
+    font-size: 1.25rem;
+    padding: 0.5rem;
+  }
+
+  /* GAME PAGE STYLES */
+  .game-container {
+    margin-top: 30vh;
+    width: 55%;
+    padding: 0.5rem;
+  }
+
+  .game-btn {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* MEDIUM LAPTOP SCREENS */
+@media only screen and (min-width: 1440px) and (max-width: 1680px) {
+  body {
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+}

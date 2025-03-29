@@ -3,16 +3,21 @@
 {% block title %}Mega Millions Lottery Numbers{% endblock %}
 
 {% block content %}
-  <div class="container game-container">
-    <div class="row">
-      <div class="col">
-        <h1 class="game-title">Mega Millions</h1>
-        <h2 class="lotto-num-long">{{ num1 }} - {{ num2 }} - {{ num3 }} - {{ num4}} - {{ num5 }} | MB {{ mega}}</h2>
-        <form action="{{ url_for('mega_millions_game') }}" method="post">
-          <button class="btn btn-lg game-btn" name="regenerate" type="submit"
-            onclick="{{ num1 }} {{ num2 }} {{ num3 }} {{ num4 }} {{ num5 }} {{ mega }}">Click-Go-Lotto Again</button>
-        </form>
-      </div>
-    </div>
+<div class="container game-container-with-latest-winning-numbers">
+  <div>
+    <h1 class="winning-numbers-header">Latest Winning Mega Millions Numbers</h1>
+    <h2 class="date-header">Draw Date: {{ mega_millions_header }}</h2>
+    <p class="winning-numbers">{{ mega_millions_numbers[0] }} - {{ mega_millions_numbers[1] }} - {{
+      mega_millions_numbers[2] }} - {{
+      mega_millions_numbers[3] }} - {{ mega_millions_numbers[4] }} | MB {{ mega_millions_numbers[5] }}</p>
+    <hr>
+    <h1 class="mega-millions-title">Your Random Mega Millions Numbers</h1>
+    <h2 class="mega-millions-lotto-num">{{ num1 }} - {{ num2 }} - {{ num3 }} - {{ num4}} - {{ num5 }} | MB {{ mega}}
+    </h2>
+    <form action="{{ url_for('routes.mega_millions_game') }}" method="post">
+      <button class="btn btn-lg game-btn" name="regenerate" type="submit"
+        onclick="{{ num1 }} {{ num2 }} {{ num3 }} {{ num4 }} {{ num5 }} {{ mega }}">Click-Go-Lotto Again</button>
+    </form>
   </div>
+</div>
 {% endblock %}
