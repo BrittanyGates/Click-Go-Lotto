@@ -3,16 +3,15 @@
 {% block title %}Pick3 Lottery Numbers{% endblock %}
 
 {% block content %}
-  <div class="container game-container">
-    <div class="row">
-      <div class="col">
-        <h1 class="game-title">Pick3</h1>
-        <h2 class="lotto-num-short">{{ num1 }} - {{ num2 }} - {{ num3 }}</h2>
-        <form action="{{ url_for('routes.pick3_game') }}" method="post">
-          <button class="btn btn-lg game-btn" name="regenerate" type="submit"
-            onclick="{{ num1 }} {{ num2 }} {{ num3 }}">Click-Go-Lotto Again</button>
-        </form>
-      </div>
+<div class="container game-container">
+  <div class="row">
+    <div class="col">
+      <h1 class="game-title">Pick3</h1>
+      <h2 class="lotto-num-short">{{ num1 }} - {{ num2 }} - {{ num3 }}</h2>
+      <form action="{{ url_for('routes.pick3_game') }}" method="post">
+        <button class="btn btn-lg game-btn" name="regenerate" type="submit">Click-Go-Lotto Again</button>
+      </form>
     </div>
   </div>
+</div>
 {% endblock %}

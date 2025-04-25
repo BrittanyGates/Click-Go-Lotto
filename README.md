@@ -24,6 +24,8 @@ Please file a new issue using the [Issues](https://github.com/brittbot-bgates/Cl
 
 ## Version History
 
+* Latest release notes as of April 2025:
+    * Removed the inline onclick event handler from all the HTML files.
 * Latest release notes as of March 2025:
     * Created a base.html template
     * Extended the base.html template to all the html files in the project.
