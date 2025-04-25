@@ -10,14 +10,14 @@
     <p class="winning-numbers">{{ cash4life_numbers[0] }} - {{ cash4life_numbers[1] }} - {{
       cash4life_numbers[2] }} - {{
       cash4life_numbers[3] }} - {{ cash4life_numbers[4] }} | CB {{ cash4life_numbers[5] }}</p>
-      <hr>
-      <h1 class="cash4life-title">Your Random Cash4Life Numbers</h1>
-      <h2 class="cash4life-lotto-num">{{ num1 }} - {{ num2 }} - {{ num3 }} - {{ num4}} - {{ num5 }} | CB {{ cash_ball }}</h2>
-      <form action="{{ url_for('routes.cash4life_game') }}" method="post">
-        <button class="btn btn-lg game-btn" name="regenerate" type="submit"
-          onclick="{{ num1 }} {{ num2 }} {{ num3 }} {{ num4 }} {{ num5 }} {{ cash_ball }}">Click-Go-Lotto
-          Again</button>
-      </form>
+    <hr>
+    <h1 class="cash4life-title">Your Random Cash4Life Numbers</h1>
+    <h2 class="cash4life-lotto-num">{{ num1 }} - {{ num2 }} - {{ num3 }} - {{ num4}} - {{ num5 }} | CB {{ cash_ball }}
+    </h2>
+    <form action="{{ url_for('routes.cash4life_game') }}" method="post">
+      <button class="btn btn-lg game-btn" name="regenerate" type="submit">Click-Go-Lotto
+        Again</button>
+    </form>
   </div>
 </div>
 {% endblock %}
