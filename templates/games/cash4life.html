@@ -2,20 +2,72 @@
 
 {% block title %}Cash4Life Lottery Numbers{% endblock %}
 
+{% block navbar %}
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{{ url_for('routes.index') }}">Click-Go-Lotto</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#defaultNavbar"
+      aria-controls="defaultNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="defaultNavbar">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('routes.index') }}">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            National Lottery Games
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{{ url_for('routes.mega_millions_game') }}">Mega
+                Millions</a>
+            </li>
+            <li><a class="dropdown-item" href="{{ url_for('routes.powerball_game') }}">Powerball</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            State Lottery Games
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{{ url_for('routes.cash3_game') }}">Cash 3</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('routes.cash4_game') }}">Cash 4</a></li>
+            <li><a class="dropdown-item active" aria-current="page"
+                href="{{ url_for('routes.cash4life_game') }}">Cash4Life</a>
+            </li>
+            <li><a class="dropdown-item" href="{{ url_for('routes.fantasy_five_game') }}">Fantasy
+                Five</a>
+            </li>
+            <li><a class="dropdown-item" href="{{ url_for('routes.pick3_game') }}">Pick 3</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('routes.pick4_game') }}">Pick 4</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('routes.pick5_game') }}">Pick 5</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+{% endblock %}
+
 {% block content %}
-<div class="container game-container-with-latest-winning-numbers">
+<div class="container d-flex justify-content-center align-items-center p-4 game-container-with-latest-winning-numbers">
   <div>
-    <h1 class="winning-numbers-header">Latest Winning Cash4Life Numbers</h1>
-    <h2 class="date-header">Draw Date: {{ cash4life_header }}</h2>
-    <p class="winning-numbers">{{ cash4life_numbers[0] }} - {{ cash4life_numbers[1] }} - {{
+    <h1 class="me-1 fs-3 text-center winning-numbers-header">Latest Winning Cash4Life Numbers</h1>
+    <h2 class="fs-4 text-center date-header">Draw Date: {{ cash4life_header }}</h2>
+    <p class="me-2 fs-4 text-center winning-numbers">{{ cash4life_numbers[0] }} - {{ cash4life_numbers[1] }} - {{
       cash4life_numbers[2] }} - {{
       cash4life_numbers[3] }} - {{ cash4life_numbers[4] }} | CB {{ cash4life_numbers[5] }}</p>
     <hr>
-    <h1 class="cash4life-title">Your Random Cash4Life Numbers</h1>
-    <h2 class="cash4life-lotto-num">{{ num1 }} - {{ num2 }} - {{ num3 }} - {{ num4}} - {{ num5 }} | CB {{ cash_ball }}
+    <h1 class="fs-3 text-center cash4life-title">Your Random Cash4Life Numbers</h1>
+    <h2 class="my-3 fs-2 fw-semibold text-center cash4life-lotto-num">{{ num1 }} - {{ num2 }} - {{ num3 }} - {{ num4}} -
+      {{ num5 }} | CB {{ cash_ball }}
     </h2>
-    <form action="{{ url_for('routes.cash4life_game') }}" method="post">
-      <button class="btn btn-lg game-btn" name="regenerate" type="submit">Click-Go-Lotto
+    <div id="spinner-container" class="d-flex justify-content-center mt-3 spinner"></div>
+    <form id="game-form" class="d-flex justify-content-center" action="{{ url_for('routes.cash4life_game') }}"
+      method="post">
+      <button id="game-button" class="btn btn-lg" name="regenerate" type="submit">Click-Go-Lotto
         Again</button>
     </form>
   </div>

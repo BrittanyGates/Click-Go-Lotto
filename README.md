@@ -1,6 +1,6 @@
 # Click-Go-Lotto
 
-![A rounded triangle containing four lottery balls with numbers on each. At the bottom of the triangle is the phrase "Click-Go-Lotto."](static/img/click_go_lotto_gemini_generated.jpeg)
+![A rounded triangle containing four lottery balls with numbers on each. At the bottom of the triangle is the phrase "Click-Go-Lotto."](static/images/click_go_lotto_gemini_generated.jpeg)
 
 Get lottery numbers for Cash3, Cash4, Cash4Life, Fantasy Five, Mega Millions, Pick3, Pick4, Pick5, and Powerball with a
 click of a button.
@@ -20,27 +20,32 @@ A modern web browser (like Google Chrome) with JavaScript enabled.
 
 ## Found A Bug? Need Help?
 
-Please file a new issue using the [Issues](https://github.com/brittbot-bgates/Click-Go-Lotto/issues) tab on the repo.
+Please file a new issue using the Issues tab on the repo.
 
 ## Version History
 
+* Latest release notes as of April May:
+    - Replaced some CSS rules with various Bootstrap ultilities.
+    - Created main.js to contain the event handlers.
+    - Added a spinner to the three National games that appears when the visitor generates a new set of numbers.
+    - Added additional screen sizes of the mobile media queries.
 * Latest release notes as of April 2025:
-    * Removed the inline onclick event handler from all the HTML files.
+    - Removed the inline onclick event handler from all the HTML files.
 * Latest release notes as of March 2025:
-    * Created a base.html template
-    * Extended the base.html template to all the html files in the project.
-    * Added the latest winning lottery numbers for Cash4Life, Mega Millions, and Powerball.
+    - Created a base.html template
+    - Extended the base.html template to all the html files in the project.
+    - Added the latest winning lottery numbers for Cash4Life, Mega Millions, and Powerball.
 * Latest release notes as of February 2025:
-    * Updated the README.
+    - Updated the README.
 * Latest release notes as of January 2025:
-    * Updated the footer on all pages to display all my social media links.
+    - Updated the footer on all pages to display all my social media links.
 * Latest release notes as of late December 2024:
-    * Consolidated all the individual modules for each game into one module.
-    * Added type annotations to all the functions and variables.
-    * Added a gitignore file.
-    * Updated the social media links in the index.html footer.
-    * Fixed typos.
-    * Removed unnecessary files from the repo.
+    - Consolidated all the individual modules for each game into one module.
+    - Added type annotations to all the functions and variables.
+    - Added a gitignore file.
+    - Updated the social media links in the index.html footer.
+    - Fixed typos.
+    - Removed unnecessary files from the repo.
 
 ## License
 
@@ -49,4 +54,3 @@ This project is licensed under the MIT License. See the LICENSE file for details
 ## Acknowledgments
 
 [Dominique Pizzie](https://gist.github.com/DomPizzie) for the simple README template.
-
