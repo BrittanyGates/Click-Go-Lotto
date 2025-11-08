@@ -24,8 +24,12 @@ Please file a new issue using the Issues tab on the repo.
 
 ## Version History
 
-* Latest release notes as of April May:
-    - Replaced some CSS rules with various Bootstrap ultilities.
+* Latest release notes as of November 2025:
+    - Refactored web scraping functions for Cash4Life, Mega Millions, and Powerball for improved reliability and efficiency.
+    - Switched Cash4Life data source to Virginia Lottery API for more stable winning number retrieval.
+    - Implemented user-agent headers and increased timeouts for web requests to mitigate blocking.
+* Latest release notes as of May 2025:
+    - Replaced some CSS rules with various Bootstrap utilities.
     - Created main.js to contain the event handlers.
     - Added a spinner to the three National games that appears when the visitor generates a new set of numbers.
     - Added additional screen sizes of the mobile media queries.

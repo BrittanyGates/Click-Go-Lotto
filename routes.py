@@ -9,44 +9,44 @@ import requests
 routes_bp = Blueprint("routes", __name__)
 
 
-def get_website_status_codes() -> bool:
+def get_website_status_codes(url: str) -> requests.Response | bool:
     """Determines if the provided URLs return a 200 HTML status code.
-    :return: True if all the websites return OK, but False if one fails.
+    :param: The URL of the website to check.
+    :return: The response object if the website returns OK, but False if it fails.
     """
-    website_urls: dict[str, str] = {
-        "cash4life_url": "https://www.molottery.com/cash4life",
-        "mega_millions_url": "https://nclottery.com/mega-millions",
-        "powerball_url": "https://www.valottery.com/data/draw-games/powerball",
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
     }
-    response_code: bool = True
-
-    for link in website_urls.values():
-        try:
-            link_status_code: requests.Response = requests.get(link, timeout=1)
-            if link_status_code.status_code != requests.codes.ok:
-                response_code = False
-        except requests.Timeout:
+    try:
+        response: requests.Response = requests.get(url, headers=headers, timeout=5)
+        if response.status_code == requests.codes.ok:
+            return response
+        else:
             return False
-        except requests.exceptions.HTTPError:
-            return False
-
-    return response_code
+    except (requests.Timeout, requests.exceptions.HTTPError, requests.ConnectionError):
+        return False
 
 
 def get_cash4life_winning_numbers() -> tuple[str, list[str]] | tuple[str, list[list]]:
-    """Gets the latest winning Cash4Life numbers from the Missouri state lottery website.
+    """Gets the latest winning Cash4Life numbers from the Virginia state lottery website.
     :return: Either text of the function's failure, or a tuple containing a header and a list of numbers.
     """
-    if get_website_status_codes():
-        cash4life_url = "https://www.molottery.com/cash4life"
-        cash4life_page = requests.get(cash4life_url, timeout=1)
-        soup = BeautifulSoup(cash4life_page.content, "html.parser")
-        cash4life_winning_numbers_header = soup.find(class_="game-single-calendar__title").text.strip()
-        cash4life_winning_numbers = soup.find_all(class_="game-single-calendar__num")
-        cash4life_winning_numbers_list = []
-
-        for numbers in cash4life_winning_numbers:
-            cash4life_winning_numbers_list.append(numbers.text.strip())
+    cash4life_url = "https://www.valottery.com/api/v1/downloadall?gameId=1065"
+    cash4life_page = get_website_status_codes(cash4life_url)
+    if cash4life_page:
+        # The API returns a CSV file, so we need to parse it
+        data = cash4life_page.text.splitlines()
+        # Filter out any lines that don't contain winning number data
+        valid_lines = [line for line in data if ";" in line]
+        # The last line of the filtered list is the most recent drawing
+        latest_drawing = valid_lines[-1]
+        parts = latest_drawing.split(';')
+        date = parts[0]
+        numbers = parts[1].split(',')
+        cash_ball = parts[2].split(': ')[1]
+        
+        cash4life_winning_numbers_header = f"Winning Numbers for {date}"
+        cash4life_winning_numbers_list = numbers + [cash_ball]
 
         return cash4life_winning_numbers_header, cash4life_winning_numbers_list
     else:
@@ -60,9 +60,9 @@ def get_mega_millions_winning_numbers() -> tuple[str, tuple[str, str, str, str, 
     """Gets the latest winning Mega Millions numbers from the North Carolina website.
     :return: Either text of the function's failure, or a tuple containing a header and a list of numbers.
     """
-    if get_website_status_codes():
-        mega_millions_url = "https://nclottery.com/mega-millions"
-        mega_millions_page = requests.get(mega_millions_url, timeout=1)
+    mega_millions_url = "https://nclottery.com/mega-millions"
+    mega_millions_page = get_website_status_codes(mega_millions_url)
+    if mega_millions_page:
         soup = BeautifulSoup(mega_millions_page.content, "html.parser")
         mega_millions_winning_numbers_header = soup.find(id="ctl00_MainContent_lblDrawdate").text.strip()
         mega_millions_winning_numbers_1 = soup.find(id="ctl00_MainContent_lblNum1").text.strip()
@@ -85,9 +85,9 @@ def get_powerball_winning_numbers() -> tuple[str, list[str]] | tuple[str, list[l
     """Gets the latest winning Powerball numbers from the official website.
     :return: Either text of the function's failure, or a tuple containing a header and a list of numbers.
     """
-    if get_website_status_codes():
-        powerball_url = "https://www.valottery.com/data/draw-games/powerball"
-        powerball_page = requests.get(powerball_url, timeout=1)
+    powerball_url = "https://www.valottery.com/data/draw-games/powerball"
+    powerball_page = get_website_status_codes(powerball_url)
+    if powerball_page:
         soup = BeautifulSoup(powerball_page.content, "html.parser")
         powerball_winning_numbers_header = soup.find(class_="title-display").text.strip()[:13]
         powerball_winning_numbers = soup.find_all(class_="balls-6")
